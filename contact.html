@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content= "width=device-width, initial-scale=1">
+     <title>MapleCafe: Land of Pancakes</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+     </script>
+     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js">
+     </script>
+
+     <link href="forms.css" rel="stylesheet">
+     <link href="style.css" rel="stylesheet">
+     
+</head>
+<body>
+
+
+    <!-------------NAVIGATION--------------->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+          <a class= "navbar-brand" href="#"><img src="images/Hehe.gif" width="70" height="70"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarResponsive">
+            <span class= "navbar-toggler-icon"></span>
+           </button>
+    <div class= "collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto">
+             <li class="nav-item active">
+                 <a class="nav-link" href="index.html">HOME</a>
+             </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="service.html">SERVICES</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MENU
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="bfast.html">BREAKFAST</a>
+                    <a class="dropdown-item" href="lunch.html">LUNCH</a>
+                    <a class="dropdown-item" href="dessert.html">DESSERT</a>
+                    <a class="dropdown-item" href="dinner.html">DINNER</a>
+                </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="char.html">CHARACTERS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="video.html">VIDEOS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+         </ul>
+    </div>
+
+         
+    </div>  
+    </nav>
+    
+    <!-------------IMAGE SLIDERS------------>
+    <div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1" class="active"></li>
+        <li data-target="#slides" data-slide-to="2" class="active"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/MapleTree.png">
+            <div class="carousel-caption">
+                <h1 class="display-2">MapleCafe</h1>
+                <h3>Indulge in our delicacies with Maple and the Gang!</h3>
+                <button type="button" class="btn btn-outling-light btn-lg"><a href="https://www.youtube.com/watch?v=VOF8hdm6hoA">VIEW TRAILER</a></button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/MapleCafe.jpg" height="700"width="1400">
+            <div class="carousel-caption">
+            <h1>MapleCafe</h1>
+            <h3>Try our Food to receive buffs from Maple-chan </h3>
+            <button type="button" class="btn btn-outling-light btn-lg">BUFFS</button>
+        </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/Dragon.gif"> 
+            <div class="carousel-caption">
+            <h1>MapleCafe</h1>
+            <h3>Endless fun and Gems awaits you!</h3>
+            <button type="button" class="btn btn-outling-light btn-lg">UwU</button>
+        </div>
+        </div>
+            
+       
+        </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!------------------FORMS----------->
+    <h2>Responsive Form</h2>
+<p>If you have any feedback with our customer service.
+Pls leave a message!
+</p>
+
+<div class="container">
+  <form action="contact.html">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="japan">Japan</option>
+        <option value="philippines">Philippines</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Message</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit"></a>
+  </div>
+  </form>
+</div>
+
+
+
+   
+
+
+   <!-----------Fixed Background--------------->
+   <figure >
+       <div class="fixed-wrap">
+           <div id="fixed">
+
+           </div>
+       </div>
+   </figure>
+
+
+   
+
+   
+
+  
+
+   <!--------------CONNECT TO SOCIAL MEDIA PLATFORMS---------->
+   <div class="container-fluid padding">
+       <div class="row text-center padding">
+        <div class="col-12">
+            <h2>CONNECT</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>    
+                    <a href="#"><i class="fab fa-instagram"></i></a> 
+                    <a href="#"><i class="fab fa-youtube"></i></a> 
+        </div>
+       </div>
+   </div>
+
+
+   <!-------------FOOTER----------------------->
+   <footer>
+       <div class="container-fluid padding">
+        <div class="row text-center">
+         <div class="col-md-4">
+             <hr class="new1">
+             <p>MAPLECAFE</p>
+             <hr class="new1">
+             <p>Contact Number:5535-678</p>
+             <p>Bachiecamaclang@gmail.com</p>
+             <p>123 Japan </p>
+             <p>Shibuya,Tokyo</p>
+
+         </div>
+         <div class="col-md-4">
+             <hr class="new1">
+          <h5>SERVICE HOURS</h5>
+          <hr class="new1">
+          <p>Monday-Friday:9am-10pm</p>
+          <p>Saturday:12pm-12am</p>
+          <p>Sunday:CLOSED</p>
+     </div>
+     <div class="col-md-4">
+        <hr class="new1">
+     <h5>LOCATIONS</h5>
+     <hr class="new1">
+     <p>Japan</p>
+     <p>Philippines</p>
+     <p>USA</p>
+</div>
+     <div class="col-12">
+     <hr class="new1">
+     <h5>&copy;MapleCafe.com</h5>
+     </div>
+        </div>   
+       </div>
+   </footer>
+   
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
